@@ -1,13 +1,15 @@
+using Control;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Control_Test
 {
     [TestClass]
-    public class UnitTest1
+    public class Connect_Tests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Create()
         {
+            var c = new Connect();
         }
     }
 }
