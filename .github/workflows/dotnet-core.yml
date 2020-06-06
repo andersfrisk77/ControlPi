@@ -18,10 +18,9 @@ jobs:
       with:
         dotnet-version: 3.1.101
     - name: Set folder
-      working-directory: Control
     - name: Install dependencies
       run: dotnet restore
     - name: Build
       run: dotnet build --configuration Release --no-restore
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal Control_Test/Control_Test.csproj
