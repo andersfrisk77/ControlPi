@@ -1,8 +1,8 @@
 name: manually re-running actions
-on: repository_dispatch
+on: ['deployment']
 
 jobs:
-  manual_deploy:
+  deployment:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout master
