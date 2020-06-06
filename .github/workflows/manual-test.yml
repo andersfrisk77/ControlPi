@@ -1,9 +1,5 @@
 name: manually re-running actions
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: repository_dispatch
 
 jobs:
   manual_deploy:
